@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    var path = window.location.pathname;
+    if (path.startsWith('/zh/')) {
+        window.location.href = '/zh/404.html';
+    } else if (path.startsWith('/en/')) {
+        window.location.href = '/en/404.html';
+    } else {
+        // 預設重定向（可以選擇中文或英文）
+        window.location.href = '/zh/404.html';
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

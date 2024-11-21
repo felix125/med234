@@ -1,0 +1,9 @@
+zh:
+  author: "作者"
+  date: "發布日期"
+  date_format: "%Y-%m-%d"
+
+en:
+  author: "Author"
+  date: "Published on"
+  date_format: "%B %d, %Y"

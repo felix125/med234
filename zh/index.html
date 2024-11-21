@@ -1,0 +1,15 @@
+---
+---
+
+<div class="prose prose-stone container mx-auto lg:max-x-3xl">
+  <h2>文章列表</h2>
+  <ul>
+    {% for post in site.posts %}
+      {% if post.lang == 'zh' %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

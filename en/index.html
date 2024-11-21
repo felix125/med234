@@ -1,0 +1,15 @@
+---
+---
+
+<div class="prose prose-stone container mx-auto">
+  <h2>List of articles</h2>
+  <ul>
+    {% for post in site.posts %}
+      {% if post.lang == 'en' %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
