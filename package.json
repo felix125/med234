@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "tailwindcss": "^3.4.13"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "scripts": {
+    "jekyll": "bundle exec jekyll serve --host=0.0.0.0 --livereload",
+    "tailwind": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css --watch",
+    "start": "concurrently \"yarn run jekyll\" \"yarn run tailwind\""
+  }
+}

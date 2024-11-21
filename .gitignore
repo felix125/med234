@@ -1,0 +1,5 @@
+_site/
+.bundle/
+.bak/
+Gemfile.lock
+node_modules/
