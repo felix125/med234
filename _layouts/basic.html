@@ -1,13 +1,7 @@
 <!doctype html>
-<html>
+<html lang="{{ page.lang }}">
   <head>
     {% include head.html %}
-
-    {% if page.lang == 'zh' %}
-        <title>{{ site.data.zh.title }}</title>
-    {% else %}
-        <title>{{ site.data.en.title }}</title>
-    {% endif %}
 
   </head>
   <body class="bg-stone-100">

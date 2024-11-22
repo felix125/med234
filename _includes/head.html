@@ -1,4 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/assets/css/main.css">
-<title>{{ site.data[page.lang].title }}</title>
+<script src="{{ '/assets/js/dropdown.js' | relative_url }}" defer></script>
+<!-- 加入替代語言連結 -->
+<link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
+<link rel="alternate" hreflang="zh" href="{{ site.url }}/zh/" />
+<title>{{ page.title }} | med234 | 醫學二三四</title>
+<meta name="description" content="{{ page.description }}">
+<meta name="keywords" content="{{ page.keywords }}">
