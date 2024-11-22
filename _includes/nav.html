@@ -1,0 +1,82 @@
+<nav class="grid grid-cols-[1fr,auto] items-center p-4 bg-gray-100 relative">
+    <h1 class="font-bold">
+        {% if page.lang == 'zh' %}
+        <span class="block text-4xl -ml-4 md:text-5xl">{{ site.data.zh.title }}</span>
+        {% else %}
+        <span class="block text-5xl -ml-4 md:inline">{{ site.data.en.title.main }}:</span>
+        <span class="block text-2xl -ml-4 md:inline md:text-5xl">{{ site.data.en.title.subtitle }}</span>
+        {% endif %}
+    </h1>
+
+    <!-- 手機版下拉選單 -->
+    <div class="lg:hidden justify-self-end">
+        <button id="mobile-menu-toggle" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-stone-50 shadow-md z-50">
+            <!-- <a href="/" class="block px-4 py-2 hover:bg-gray-200 hover:text-blue-600 transition-all duration-200">Home</a> -->
+            <a href="/" class="nav-item">Home</a>
+            <a href="/about" class="nav-item">About</a>
+            <div class="relative">
+                <button class="w-full text-left px-4 py-2 hover:bg-gray-100">
+                    Articles
+                </button>
+                <div class="pl-4">
+                    <a href="/posts" class="nav-item">全部文章</a>
+                    <a href="/categories" class="nav-item">文章主題</a>
+                </div>
+            </div>
+            {% if page.lang == 'en' %}
+            <a href="/zh/" class="nav-item">中文首頁</a>
+            {% else %}
+            <a href="/en" class="nav-item">English</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- 其它選單 -->
+    <div class="hidden lg:flex lg:col-span-2 lg:mt-4 items-center space-x-4">
+        <a href="/{{ page.lang }}" class="flex items-center hover:bg-gray-200 p-2 rounded">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h4a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h4a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+            </svg>
+            {{ site.data[page.lang].nav.home }}
+        </a>
+
+        <a href="/about" class="flex items-center hover:bg-gray-200 p-2 rounded">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            {{ site.data[page.lang]nav.about }}
+        </a>
+
+        <div class="relative group">
+            <button class="flex items-center hover:bg-gray-200 p-2 rounded">
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                </svg>
+                Articles
+            </button>
+
+            <div class="hidden absolute z-10 bg-white shadow-lg rounded group-hover:block">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">全部文章</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">文章主題</a>
+            </div>
+        </div>
+
+        <a href="/{{ site.data[page.lang].nav.alternative_home }}/" class="flex items-center hover:bg-gray-200 p-2 rounded">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.002 6.002 0 004.083 9zM10 2a8 8 0 104.07 14.954c.025-.059.038-.125.038-.191 0-.998-.615-1.998-1.46-2.56a6.009 6.009 0 00-.642-.382L10 8.556V5.99c0-.494-.144-.961-.4-1.365zM10 13.66V14a2 2 0 01-2 2v1a2 2 0 01-2 2h-1a2 2 0 01-2-2v-2h-.5a1.5 1.5 0 010-3H6v-.348a6.074 6.074 0 001.173.578c.026.123.044.248.044.377v.413c0 .474.27.88.668 1.062.199.094.407.175.618.258V13.66a3.356 3.356 0 00-2.518-3.235l-.107-.031a6.074 6.074 0 016.256-.957C10.779 10.567 10 11.892 10 13.66zM14.443 9H12.5V7h.5a2 2 0 012 2 2 2 0 01-1.857 1.977z" clip-rule="evenodd"/>
+            </svg>
+            {% if page.lang == "en" %}
+            中文首頁
+            {% else %}
+            English
+            {% endif %}
+        </a>
+    </div>
+</nav>
