@@ -2,18 +2,17 @@
 layout: default
 ---
 
-<article class="prose container mx-auto">
+<article class="prose prose-h1:text-3xl container mx-auto ">
     <h1>{{ page.title }}</h1>
-
     <div class="text-gray-600 -mt-4">
     {% if page.author %}
-      <span class="font-bold">{{ site.data.locales[page.lang].author }}：</span>
+      <span class="font-bold">{{ site.data[page.lang].post.author }}：</span>
       <span class="italic">{{ page.author }}</span>
     {% endif %}
       <br />
     {% if page.date %}
-      <span class="font-bold">{{ site.data.locales[page.lang].date }}：</span>
-      <span class="italic">{{ page.date | date: "%Y-%m-%d" }}</span>
+      <span class="font-bold">{{ site.data[page.lang].post.date }}：</span>
+      <span class="italic">{{ page.date | date: site.data[page.lang].post.date_format }}</span>
     {% endif %}
   </div>
   <div>

@@ -4,4 +4,7 @@ nav:
   home: "首頁"
   about: "關於"
   alternative_home: "en"
-
+post:
+  author: "作者"
+  date: "發布日期"
+  date_format: "%Y-%m-%d"

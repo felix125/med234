@@ -5,3 +5,7 @@ nav:
   home: "Home"
   about: "About"
   alternative_home: "zh"
+post:
+  author: "Author"
+  date: "Published on"
+  date_format: "%B %d, %Y"
