@@ -11,4 +11,6 @@ group :jekyll_plugins do
   #gem 'jekyll-postcss'
 end
 
-gem "webrick"
+gem 'csv'
+gem 'base64'
+gem 'webrick'
