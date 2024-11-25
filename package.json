@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@tailwindcss/typography": "^0.5.15",
+    "canvas": "^2.11.2",
+    "glob": "^11.0.0",
+    "gray-matter": "^4.0.3",
     "tailwindcss": "^3.4.13"
   },
   "devDependencies": {
@@ -9,6 +12,8 @@
   "scripts": {
     "jekyll": "bundle exec jekyll serve --host=0.0.0.0 --livereload",
     "tailwind": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css --watch",
-    "start": "concurrently \"yarn run jekyll\" \"yarn run tailwind\""
+    "post": "node scripts/post.js",
+    "share-image": "node scripts/generate-shares.js",
+    "start": "concurrently \"yarn run jekyll\" \"yarn run tailwind\" \"yarn run share-image\""
   }
 }
