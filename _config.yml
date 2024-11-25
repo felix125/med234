@@ -20,7 +20,9 @@
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "med234.zenvoyage.art" # the base hostname & protocol for your site, e.g. http://example.com
-#permalink: "/:lang/:title/"
+title: "醫學二三四 | Med 234"
+#permalink: "/:lang/:basename/"
+verbose: true
 #twitter_username:
 #github_username:  jekyll
 
@@ -29,6 +31,7 @@ defaults:
   # 英文網站的設置
   - scope:
       path: "en"
+      type: "pages"
     values:
       layout: default
       lang: "en"
@@ -36,6 +39,7 @@ defaults:
   # 中文網站的設置
   - scope:
       path: "zh"
+      type: "pages"
     values:
       layout: default
       lang: "zh"
@@ -47,6 +51,7 @@ defaults:
     values:
       layout: post
       lang: "en"
+      permalink: "/posts/en/:name/"
 
   # 中文文章的設置
   - scope:
@@ -55,6 +60,7 @@ defaults:
     values:
       layout: post
       lang: "zh"
+      permalink: "/posts/zh/:name/"
 
 # collections:
 #   articles:
@@ -90,6 +96,7 @@ exclude:
     - .bak/
     - Gemfile
     - Gemfile.lock
+    - scripts/
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
