@@ -1,10 +1,20 @@
+<!-- 基本設定 -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+<!-- 安全性設定 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+{% include head/seo.html %}
+{% include head/schema.html %}
+{% include head/favicon.html %}
+{% include head/social.html %}
+<!-- 標題 -->
+<title>{{ page.title }} | {{ site.data.en.title.main }} | {{ site.data.zh.title.main }}</title>
+
+
+
+<!-- 樣式與腳本 -->
 <link rel="stylesheet" href="/assets/css/main.css">
 <script src="{{ '/assets/js/dropdown.js' | relative_url }}" defer></script>
-<!-- 加入替代語言連結 -->
-<link rel="alternate" hreflang="en" href="{{ site.url }}/en/" />
-<link rel="alternate" hreflang="zh" href="{{ site.url }}/zh/" />
-<title>{{ page.title }} | med234 | 醫學二三四</title>
-<meta name="description" content="{{ page.description }}">
-<meta name="keywords" content="{{ page.keywords }}">
