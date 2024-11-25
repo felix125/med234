@@ -1,12 +1,14 @@
 <nav class="grid grid-cols-[1fr,auto] items-center p-4 bg-gray-100 relative">
+    <a href="/{{ page.lang }}" class="cursor-pointer hover:opacity-80">
     <h1 class="font-bold">
         {% if page.lang == 'zh' %}
         <span class="block text-4xl -ml-4 md:text-5xl">{{ site.data.zh.title.main }}</span>
         {% else %}
         <span class="block text-5xl -ml-4 md:inline">{{ site.data.en.title.main }}:</span>
-        <span class="block text-2xl -ml-4 md:inline md:text-5xl">{{ site.data.en.title.subtitle }}</span>
+        <span class="block text-2xl -ml-4 md:inline md:text-5xl lg:ml-2">{{ site.data.en.title.subtitle }}</span>
         {% endif %}
     </h1>
+    </a>
 
     <!-- 手機版下拉選單 -->
     <div class="lg:hidden justify-self-end">
@@ -18,8 +20,8 @@
 
         <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-stone-50 shadow-md z-50">
             <!-- <a href="/" class="block px-4 py-2 hover:bg-gray-200 hover:text-blue-600 transition-all duration-200">Home</a> -->
-            <a href="/" class="nav-item">Home</a>
-            <a href="/about" class="nav-item">About</a>
+            <a href="/{{ page.lang }}" class="nav-item">{{ site.data[page.lang].nav.home }}</a>
+            <a href="/{{ page.lang }}/about/" class="nav-item">{{ site.data[page.lang].nav.about }}</a>
             <div class="relative">
                 <button class="w-full text-left px-4 py-2 hover:bg-gray-100">
                     Articles

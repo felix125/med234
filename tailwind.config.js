@@ -10,7 +10,19 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in',
+        'fade-in-slow': 'fadeIn 1s ease-in',
+        'fade-in-fast': 'fadeIn 0.3s ease-in',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

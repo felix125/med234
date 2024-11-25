@@ -2,20 +2,20 @@
 layout: basic
 lang: en
 title: Language Selection Page
-description: Select your preferred language to continue browsing our website. 
+description: Select your preferred language to continue browsing our website. | 請選擇你偏愛的語言以瀏覽網站
 keywords: Language selection, choose language, multilingual website, 語言選擇, 多語網站
 ---
 <div class="flex flex-col items-center">
     <div class="pt-32">
-        <h1 class="text-3xl mb-8">Med234 / 醫學二三四</h1>
+        <h1 class="text-4xl mb-8">{{ site.data.en.title.main }} / {{ site.data.zh.title.main }}</h1>
         <div class="space-y-4 flex flex-col">
             <a href="/en/" class="group px-8 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 text-center">
-                <span class="block text-lg font-medium">English Version</span>
-                <span class="text-sm text-blue-100">View Med234 Information in English</span>
+                <span class="block text-xl font-medium">English Version</span>
+                <span class="text-sm text-blue-100">View {{ site.data.en.title.main }} Information in English</span>
             </a>
             <a href="/zh/" class="group px-8 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 text-center">
-                <span class="block text-lg font-medium">中文版本</span>
-                <span class="text-sm text-blue-100">查看醫學二三四中文版</span>
+                <span class="block text-xl font-medium">中文版本</span>
+                <span class="text-sm text-blue-100">查看{{ site.data.zh.title.main }}中文版</span>
             </a>
         </div>
     </div>
