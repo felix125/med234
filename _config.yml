@@ -20,8 +20,6 @@
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "med234.zenvoyage.art" # the base hostname & protocol for your site, e.g. http://example.com
-title: "醫學二三四 | Med 234"
-#permalink: "/:lang/:basename/"
 verbose: true
 #twitter_username:
 #github_username:  jekyll
