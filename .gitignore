@@ -1,5 +1,5 @@
 _site/
-.bundle/
+.bundle/vendor
 .bak/
 Gemfile.lock
 node_modules/
