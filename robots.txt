@@ -1,1 +1,1 @@
-Sitemap: med234.zenvoyage.art/sitemap.xml
+Sitemap: https://med234.zenvoyage.art/sitemap.xml
