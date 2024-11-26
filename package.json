@@ -12,6 +12,7 @@
   "scripts": {
     "jekyll": "bundle exec jekyll serve --host=0.0.0.0 --livereload",
     "tailwind": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css --watch",
+    "build:css": "npx tailwindcss -i assets/css/main.css -o _site/assets/css/main.css",
     "post": "node scripts/post.js",
     "share-image": "node scripts/generate-shares.js",
     "start": "concurrently \"yarn run jekyll\" \"yarn run tailwind\" \"yarn run share-image\""
