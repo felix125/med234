@@ -3,54 +3,43 @@ name: Jekyll Build and Deploy
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 permissions:
   contents: write
   pages: write
   id-token: write
 
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
     
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.3.6'
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.6'
     
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-        cache: 'yarn'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'yarn'
     
-    - name: Install dependencies
-      run: |
-        yarn add tailwindcss @tailwindcss/typography
-        bundle install
+      - name: Install dependencies
+        run: |
+          yarn add tailwindcss @tailwindcss/typography
+          bundle install
     
-    - name: Build Jekyll site
-      run: bundle exec jekyll build
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
 
-    - name: Build CSS
-      run: yarn run build:css
+      - name: Build CSS
+        run: yarn run build:css
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-
-    - name: Debug Tailwind CSS
-      run: |
-        echo "Current directory:"
-        pwd
-        echo "Listing assets:"
-        ls -l assets/css
-        echo "After build:"
-        ls -l _site/assets/css
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
