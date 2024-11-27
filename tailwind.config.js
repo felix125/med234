@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './_includes/*.html',
+    './_includes/**/*.html',
     './_layouts/*.html',
     './_posts/en/*.md',
     './_posts/zh/*.md',
