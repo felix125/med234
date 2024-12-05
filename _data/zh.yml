@@ -5,6 +5,7 @@ description: ""
 nav:
   home: "首頁"
   about: "關於"
+  articles: "文章"
   alternative_home: "en"
 post:
   author: "作者"

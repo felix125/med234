@@ -1,0 +1,36 @@
+---
+layout: default
+title: All Articles
+permalink: /en/posts/
+---
+
+<div class="container mx-auto px-4 py-8 -mt-8 lg:max-w-3xl">
+  <h1 class="text-3xl font-bold mb-6">{{ page.title }}</h1>
+
+  {% assign postsByYearMonth = site.posts | where_exp: "post", "post.path contains '_posts/en/'" | group_by_exp: "post", "post.date | date: '%B, %Y'" %}
+
+  {% for yearMonth in postsByYearMonth %}
+    <div class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2 text-cyan-700">
+          {{ yearMonth.name }}
+      </h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {% for post in yearMonth.items %}
+        <a href="{{ post.url }}" class="block no-underline">
+          <div class="border rounded-lg p-4 shadow-md bg-white prose
+                      hover:bg-gray-50 hover:scale-110 transition-transform duration-300 ease-in-out">
+            <h3 class="text-xl font-semibold mb-2 hover:text-blue-700">
+              {{ post.title }}
+            </h3>
+            <div class="text-gray-600 text-sm">
+              <p class="m-0">Author：{{ post.author | default: site.data.en.author }}</p>
+              <p class="m-0">Date：{{ post.date | date: "%B %d, %Y" }}</p>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
