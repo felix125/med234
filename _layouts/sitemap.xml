@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for p in site.pages %}
+    {% if p.lang == page.lang %}
+    <url>
+      <loc>{{ site.url }}{{ p.url }}</loc>
+      <lastmod>{{ p.last_modified_at | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endif %}
+  {% endfor %}
+  
+  {% for post in site.posts %}
+    {% if post.lang == page.lang %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endif %}
+  {% endfor %}
+</urlset>
+
