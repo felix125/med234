@@ -70,8 +70,8 @@ defaults:
 
 # Build settings
 #theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+  # - jekyll-feed
   # - jekyll-postcss
 
 
