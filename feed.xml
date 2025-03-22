@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Med234</title>
+    <link>http://example.com</link>
+    <description>A personal blog built with nabu.</description>
+    <language>zh-Hant</language>
+    <lastBuildDate>Sat, 22 Mar 2025 19:15:40 +0800</lastBuildDate>
+    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All Categories</title>
+      <link>http://example.com/categories/index.html</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>http://example.com/categories/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All Tags</title>
+      <link>http://example.com/tags/index.html</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>http://example.com/tags/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All News</title>
+      <link>http://example.com/news/index.html</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>http://example.com/news/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All Posts</title>
+      <link>http://example.com/posts/index.html</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>http://example.com/posts/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>小額募款</title>
+      <link>http://example.com/news/20250321-095419.html</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>http://example.com/news/20250321-095419.html</guid>
+      <description><![CDATA[透過十年研究癌症療癒，我發現康復不只是醫療，而是一種世界觀的改變。我希望透過出版、網站與影片分享這些發現，並尋求支持，讓更多人受惠！]]></description>
+    </item>
+  </channel>
+</rss>
