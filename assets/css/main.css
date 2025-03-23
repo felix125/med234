@@ -109,26 +109,71 @@ p {
   margin-bottom: 1rem;
 }
 
+.underline {
+  background-image: linear-gradient(transparent 85%, rgba(255, 59, 48, 0.6) 40%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0 2px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+.social-links a {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+.social-links a:hover {
+  color: var(--link-hover-color);
+}
+.social-links .sponsor-link {
+  color: #e74c3c;
+}
+.social-links .sponsor-link:hover {
+  color: #c0392b;
+}
+.social-links .sponsor-link i {
+  margin-right: 0.3rem;
+}
+
 blockquote {
-  border-left: 3px solid var(--blockquote-border);
   padding: 0.75rem 1rem;
   margin: 1.25rem 0;
-  background-color: var(--blockquote-bg);
   border-radius: 0 4px 4px 0;
   font-style: italic;
+  position: relative;
+  display: flex; /* 使用 flex 布局 */
+  flex-direction: column;
 }
-blockquote p {
-  margin-bottom: 0.5rem;
+
+/* 隱藏 br 標籤 */
+blockquote br {
+  display: none;
 }
-blockquote p:last-child {
-  margin-bottom: 0;
+
+/* 為第一個段落添加開始引號 */
+blockquote p:first-child::before {
+  content: "“"; /* 開始引號 " */
+  font-size: 1.3em;
+  color: var(--primary-color);
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-right: 0.2em;
 }
-blockquote cite {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  font-style: normal;
-  text-align: right;
+
+/* 為最後一個段落添加結束引號 */
+blockquote p:last-child::after {
+  content: "”"; /* 結束引號 " */
+  font-size: 1.3em;
+  color: var(--primary-color);
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-left: 0.2em;
 }
 
 pre {
@@ -491,7 +536,7 @@ table tr:nth-child(even) {
 }
 @media (min-width: 769px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
   h1 {
     font-size: 2.5rem;

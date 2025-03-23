@@ -2,45 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Med234</title>
-    <link>http://example.com</link>
+    <link>https://med234.zenyovage.art</link>
     <description>A personal blog built with nabu.</description>
     <language>zh-Hant</language>
-    <lastBuildDate>Sat, 22 Mar 2025 19:15:40 +0800</lastBuildDate>
-    <atom:link href="http://example.com/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Mar 2025 22:56:56 +0800</lastBuildDate>
+    <atom:link href="https://med234.zenyovage.art/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All Categories</title>
-      <link>http://example.com/categories/index.html</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
-      <guid>http://example.com/categories/index.html</guid>
+      <link>https://med234.zenyovage.art/categories/index.html</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/categories/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Tags</title>
-      <link>http://example.com/tags/index.html</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
-      <guid>http://example.com/tags/index.html</guid>
+      <link>https://med234.zenyovage.art/tags/index.html</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/tags/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All Topics</title>
+      <link>https://med234.zenyovage.art/topics/index.html</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/topics/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All News</title>
-      <link>http://example.com/news/index.html</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
-      <guid>http://example.com/news/index.html</guid>
+      <link>https://med234.zenyovage.art/news/index.html</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/news/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Posts</title>
-      <link>http://example.com/posts/index.html</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0800</pubDate>
-      <guid>http://example.com/posts/index.html</guid>
+      <link>https://med234.zenyovage.art/posts/index.html</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/posts/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
+      <title>B 型肝炎的痊癒：醫學語言的權威性與自我療癒</title>
+      <link>https://med234.zenyovage.art/posts/20250322-220021.html</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/posts/20250322-220021.html</guid>
+      <description><![CDATA[在一次偶然的機會中，我發現我的 B 型肝炎病毒幾乎消失，讓我重新思考醫學語言的權威性以及自我療癒的可能性和重要性。這個經歷讓我反思醫學中某些描述可來帶來的效應，並探討了語言如何影響我們對「未知」的接受與理解。]]></description>
+    </item>
+    <item>
+      <title>蛻變：生命的轉折</title>
+      <link>https://med234.zenyovage.art/posts/20250323-093401.html</link>
+      <pubDate>Sat, 21 Nov 2015 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/posts/20250323-093401.html</guid>
+      <description><![CDATA[一個卵巢癌末期患者的奇蹟故事，通過懺悔與心靈的改變，他不僅康復，更找到了新生命的方向，重新詮釋了生命的意義。]]></description>
+    </item>
+    <item>
       <title>小額募款</title>
-      <link>http://example.com/news/20250321-095419.html</link>
+      <link>https://med234.zenyovage.art/news/20250321-095419.html</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0800</pubDate>
-      <guid>http://example.com/news/20250321-095419.html</guid>
+      <guid>https://med234.zenyovage.art/news/20250321-095419.html</guid>
       <description><![CDATA[透過十年研究癌症療癒，我發現康復不只是醫療，而是一種世界觀的改變。我希望透過出版、網站與影片分享這些發現，並尋求支持，讓更多人受惠！]]></description>
+    </item>
+    <item>
+      <title>健康才是生命原本的樣子</title>
+      <link>https://med234.zenyovage.art/posts/20250323-092325.html</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0800</pubDate>
+      <guid>https://med234.zenyovage.art/posts/20250323-092325.html</guid>
+      <description><![CDATA[從奶奶到愛犬，我見證了健康源於信任生命。現代醫學重視疾病，但我選擇相信欲望與自然的力量。]]></description>
     </item>
   </channel>
 </rss>
