@@ -127,8 +127,16 @@ p {
 }
 .social-links a {
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+.social-links a svg {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
 .social-links a:hover {
   color: var(--link-hover-color);
@@ -139,8 +147,27 @@ p {
 .social-links .sponsor-link:hover {
   color: #c0392b;
 }
-.social-links .sponsor-link i {
+.social-links .sponsor-link svg {
   margin-right: 0.3rem;
+  fill: currentColor;
+}
+@media (min-width: 481px) {
+  .social-links a {
+    font-size: 1.1rem;
+  }
+  .social-links a svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 769px) {
+  .social-links a {
+    font-size: 1.2rem;
+  }
+  .social-links a svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 blockquote {
