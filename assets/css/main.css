@@ -9,8 +9,8 @@
   --link-hover-color: #8B5A2B; /* 稍亮的棕色，hover 時溫暖 */
   --border-color: #D1D9E6; /* 較柔和的邊框顏色，增加對比度 */
   --code-bg: #FBF8EA; /* 輕微調整，提供更柔和的背景顏色 */
-  --blockquote-bg: #F4F8FC; /* 亮藍灰背景，輕微區別 */
-  --blockquote-border: #BCC9D1; /* 較淺的灰藍色邊框 */
+  --blockquote-bg: #F5F0E2; /* 溫暖米色 */
+  --blockquote-border: #E8E3D5; /* 柔和邊框 */
   --footer-bg: #F9F4E6; /* 柔和的米色，提供輕柔的感覺 */
   --header-bg: #F9F4E6; /* 與 footer 相同，保持一致性 */
   --max-content-width: 800px; /* 設定統一的最大寬度變數 */
