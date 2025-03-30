@@ -118,6 +118,12 @@ p {
   padding: 0 2px;
 }
 
+.verse {
+  padding: 0.75rem 1rem;
+  margin: 1.25rem 0;
+  font-style: italic;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -171,38 +177,43 @@ p {
 }
 
 blockquote {
-  padding: 0.75rem 1rem;
-  margin: 1.25rem 0;
-  border-radius: 0 4px 4px 0;
-  font-style: italic;
+  padding: 0;
+  margin: 0 0 0.5em 0; /* 上邊距 0，下邊距 0.5em，左右 0 */
   position: relative;
-  display: flex; /* 使用 flex 布局 */
+  display: flex;
   flex-direction: column;
+  gap: 0;
+  font-family: inherit;
+  font-style: italic;
 }
-
-/* 隱藏 br 標籤 */
+blockquote p {
+  margin: 0;
+  padding: 0;
+}
 blockquote br {
   display: none;
 }
 
-/* 為第一個段落添加開始引號 */
-blockquote p:first-child::before {
-  content: "“"; /* 開始引號 " */
-  font-size: 1.3em;
-  color: var(--primary-color);
-  font-family: Georgia, serif;
-  font-weight: bold;
-  margin-right: 0.2em;
+blockquote + blockquote {
+  margin-top: -2em; /* 負值拉近距離 */
 }
 
-/* 為最後一個段落添加結束引號 */
-blockquote p:last-child::after {
-  content: "”"; /* 結束引號 " */
-  font-size: 1.3em;
+blockquote p:first-child::before {
+  content: "“";
+  font-size: 1em;
   color: var(--primary-color);
-  font-family: Georgia, serif;
+  font-family: inherit;
   font-weight: bold;
-  margin-left: 0.2em;
+  margin-right: 0;
+}
+
+blockquote p:last-child::after {
+  content: "”";
+  font-size: 1em;
+  color: var(--primary-color);
+  font-family: inherit;
+  font-weight: bold;
+  margin-left: 0;
 }
 
 pre {
@@ -578,12 +589,12 @@ table tr:nth-child(even) {
     margin-top: 2rem;
   }
   h3 {
-    font-size: 1.75rem;
-    margin-top: 1.75rem;
+    font-size: 1.5;
+    margin-top: 1.5rem;
   }
   h4 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
   }
   .content {
     padding: 0 1rem 2rem;
