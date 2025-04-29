@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<!-- 2025-04-29 Tue 10:18 -->
+<!-- 2025-04-29 Tue 10:20 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>生物研究的困惑</title>
+<title>生物研究的困惑 part 1</title>
 <meta name="author" content="Felix Chang">
 <meta name="description" content="探討生物醫學研究中的統計問題與科學性質疑，從物理學轉到生物資訊的視角，分析母體定義不清、數據操弄與再現性危機。">
 <meta name="keywords" content="生物醫學, 生物資訊, 統計學, p-value, 母體, 再現性危機, 數據操弄, p-value hacking, 科學方法">
 <meta name="generator" content="Org Mode">
 <link rel="canonical" href="https://med234.zenvoyage.art/posts/20250428-221518.org.html">
-<meta property="og:title" content="生物研究的困惑">
+<meta property="og:title" content="生物研究的困惑 part 1">
 <meta property="og:description" content="探討生物醫學研究中的統計問題與科學性質疑，從物理學轉到生物資訊的視角，分析母體定義不清、數據操弄與再現性危機。">
 <meta property="og:url" content="https://med234.zenvoyage.art/posts/20250428-221518.org.html">
 <meta property="og:image" content="https://med234/zenvoyage.art/assets/img/custom-og.jpg">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Med234">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="生物研究的困惑">
+<meta name="twitter:title" content="生物研究的困惑 part 1">
 <meta name="twitter:description" content="探討生物醫學研究中的統計問題與科學性質疑，從物理學轉到生物資訊的視角，分析母體定義不清、數據操弄與再現性危機。">
 <meta name="twitter:image" content="https://med234/zenvoyage.art/assets/img/custom-og.jpg">
 <link rel="alternate" type="application/rss+xml" title="Med234 RSS Feed" href="https://med234.zenvoyage.art/feed.xml">
@@ -25,10 +25,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "生物研究的困惑",
+  "headline": "生物研究的困惑 part 1",
   "description": "探討生物醫學研究中的統計問題與科學性質疑，從物理學轉到生物資訊的視角，分析母體定義不清、數據操弄與再現性危機。",
   "image": "https://med234/zenvoyage.art/assets/img/custom-og.jpg",
-  "datePublished": "2025-04-29T10:18:13+0800",
+  "datePublished": "2025-04-29T10:20:25+0800",
   "author": {
     "@type": "Person",
     "name": "Felix Chang"
@@ -80,18 +80,18 @@
 </nav>
 </header>
 <main id="content" class="content">
-<section id="outline-container-orged204e9" class="outline-2">
-<h2 id="orged204e9">生物研究的困惑</h2>
-<div class="outline-text-2" id="text-orged204e9">
-<aside id="org566825f">
+<section id="outline-container-org0179c89" class="outline-2">
+<h2 id="org0179c89">生物研究的困惑 part 1</h2>
+<div class="outline-text-2" id="text-org0179c89">
+<aside id="org8132e6f">
 <nav id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orged204e9">生物研究的困惑</a>
+<li><a href="#org0179c89">生物研究的困惑 part 1</a>
 <ul>
-<li><a href="#org13abc19">生物醫學統的統計難題(給有統計背景的人)</a></li>
-<li><a href="#org5092eb2">從物理到生物：研究的怪事紀錄(給沒有統計背景的人)</a></li>
+<li><a href="#org066abf0">生物醫學統的統計難題(給有統計背景的人)</a></li>
+<li><a href="#orgac51760">從物理到生物：研究的怪事紀錄(給沒有統計背景的人)</a></li>
 </ul>
 </li>
 </ul>
@@ -99,9 +99,9 @@
 </nav>
 </aside>
 </div>
-<div id="outline-container-org13abc19" class="outline-3">
-<h3 id="org13abc19">生物醫學統的統計難題(給有統計背景的人)</h3>
-<div class="outline-text-3" id="text-org13abc19">
+<div id="outline-container-org066abf0" class="outline-3">
+<h3 id="org066abf0">生物醫學統的統計難題(給有統計背景的人)</h3>
+<div class="outline-text-3" id="text-org066abf0">
 <p>
 我是物理系畢業的，後來卻轉到生物醫學，成為生物資訊研究人員。一開始，我水土不服，因為我不懂大家在做什麼。生物醫學研究（排除流行病學）通常提出一個問題，例如某藥是否對某病有效。他們會假設藥物有用，然後收集樣本，隨機分成兩組，進行實驗，用統計計算 p-value，判斷結果是否顯著。<br>
 </p>
@@ -119,9 +119,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org5092eb2" class="outline-3">
-<h3 id="org5092eb2">從物理到生物：研究的怪事紀錄(給沒有統計背景的人)</h3>
-<div class="outline-text-3" id="text-org5092eb2">
+<div id="outline-container-orgac51760" class="outline-3">
+<h3 id="orgac51760">從物理到生物：研究的怪事紀錄(給沒有統計背景的人)</h3>
+<div class="outline-text-3" id="text-orgac51760">
 <p>
 從物理到生物醫學：我為什麼覺得研究怪怪的？<br>
 </p>
