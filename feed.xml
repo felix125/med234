@@ -5,76 +5,76 @@
     <link>https://med234.zenvoyage.art</link>
     <description>A personal blog built with nabu.</description>
     <language>zh-Hant</language>
-    <lastBuildDate>Tue, 29 Apr 2025 11:36:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Apr 2025 10:03:03 +0800</lastBuildDate>
     <atom:link href="https://med234.zenvoyage.art/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>恐懼原來也有用！</title>
-      <link>https://med234.zenvoyage.art/posts/20250326-161512.html</link>
-      <pubDate>Wed, 25 Jan 2017 00:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://med234.zenvoyage.art/posts/20250326-161512.html</guid>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>感官的覺醒：花精與頌缽的療癒之旅</title>
-      <link>https://med234.zenvoyage.art/posts/20250326-164721.html</link>
-      <pubDate>Wed, 17 Jan 2018 00:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://med234.zenvoyage.art/posts/20250326-164721.html</guid>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>生命中的另一條路：從身體自癒到醫學反思</title>
-      <link>https://med234.zenvoyage.art/posts/20250329-155614.html</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0800</pubDate>
-      <guid isPermaLink="true">https://med234.zenvoyage.art/posts/20250329-155614.html</guid>
-      <description><![CDATA[]]></description>
-    </item>
     <item>
       <title>All Categories</title>
       <link>https://med234.zenvoyage.art/categories/sitemap.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/categories/sitemap.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Categories</title>
       <link>https://med234.zenvoyage.art/categories/index.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/categories/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Tags</title>
       <link>https://med234.zenvoyage.art/tags/sitemap.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/tags/sitemap.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Tags</title>
       <link>https://med234.zenvoyage.art/tags/index.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/tags/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All Topics</title>
       <link>https://med234.zenvoyage.art/topics/sitemap.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/topics/sitemap.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>療癒之道</title>
       <link>https://med234.zenvoyage.art/topics/index.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/topics/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>All News</title>
       <link>https://med234.zenvoyage.art/news/sitemap.html</link>
-      <pubDate>Tue, 29 Apr 2025 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
       <guid isPermaLink="true">https://med234.zenvoyage.art/news/sitemap.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All News</title>
+      <link>https://med234.zenvoyage.art/news/index.html</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
+      <guid isPermaLink="true">https://med234.zenvoyage.art/news/index.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All Posts</title>
+      <link>https://med234.zenvoyage.art/posts/sitemap.html</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
+      <guid isPermaLink="true">https://med234.zenvoyage.art/posts/sitemap.html</guid>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>All Posts</title>
+      <link>https://med234.zenvoyage.art/posts/index.html</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
+      <guid isPermaLink="true">https://med234.zenvoyage.art/posts/index.html</guid>
       <description><![CDATA[]]></description>
     </item>
   </channel>
